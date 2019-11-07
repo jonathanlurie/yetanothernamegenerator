@@ -1,0 +1,60 @@
+{
+  "name": "yetanothernamegenerator",
+  "version": "0.1.0",
+  "description": "This is yet another name generator",
+  "repository": "jonathanlurie/yetanothernamegenerator",
+  "main": "lib/yetanothernamegenerator.js",
+  "module": "es/yetanothernamegenerator.js",
+  "unpkg": "dist/yetanothernamegenerator.js",
+  "entry": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "NODE_ENV=production rollup -c",
+    "dev": "serve . -l 7654 & NODE_ENV=development rollup -w -c",
+    "doc": "documentation build src/index.js -o ./doc/ -f html; documentation build src/** -f md > documentation.md",
+    "lint": "eslint src"
+  },
+  "author": "Jonathan Lurie",
+  "license": "MIT",
+  "devDependencies": {
+    "documentation": "^8.1.2",
+    "eslint": "^5.6.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "rollup": "^0.65.2",
+    "rollup-plugin-commonjs": "^9.1.6",
+    "rollup-plugin-json": "^4.0.0",
+    "rollup-plugin-node-builtins": "^2.1.2",
+    "rollup-plugin-node-globals": "^1.4.0",
+    "rollup-plugin-node-resolve": "^3.4.0",
+    "rollup-plugin-terser": "^2.0.2",
+    "serve": "^10.0.1"
+  },
+  "eslintConfig": {
+    "extends": "eslint-config-airbnb-base",
+    "rules": {
+      "semi": [
+        "error",
+        "never"
+      ],
+      "no-underscore-dangle": [
+        "off",
+        {
+          "allowAfterThis": true
+        }
+      ],
+      "max-len": [
+        "warn",
+        {
+          "code": 150
+        }
+      ],
+      "prefer-destructuring": [
+        "off"
+      ],
+      "no-param-reassign": [
+        "warn"
+      ]
+    }
+  }
+}

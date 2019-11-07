@@ -1,0 +1,55 @@
+<html>
+<head>
+  <title>Test</title>
+</head>
+<body>
+  <!-- importing the automatically build module -->
+  <script src="../dist/yetanothernamegenerator.js"></script>
+
+  <style>
+
+    #the-name {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      font-family: sans-serif;
+      font-size: 50px;
+      color: black;
+      width: fit-content;
+      height: fit-content;
+    }
+
+    #info, #info a {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      font-family: sans-serif;
+      font-size: 15px;
+      color: black;
+      width: fit-content;
+      height: fit-content;
+    }
+  </style>
+
+
+  <div id="the-name"></div>
+  <div id="info"><a href=http://github.com/jonathanlurie/yetanothernamegenerator>See that in GitHub</a></div>
+
+
+
+  <script>
+
+  let theNameDiv = document.getElementById('the-name')
+
+  setInterval(() => {
+    theNameDiv.innerHTML = yetanothernamegenerator()
+  }, 1500)
+  </script>
+
+</body>
+</html>
