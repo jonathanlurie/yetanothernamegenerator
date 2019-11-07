@@ -1,7 +1,7 @@
 `npm install yetanothernamegenerator`
 
 ```js
-import yetanothernamegenerator from 'yetanothernamegenerator'
+import yetanothernamegenerator from '@jonathanlurie/yetanothernamegenerator'
 
 // ...
 

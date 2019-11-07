@@ -1,5 +1,5 @@
 {
-  "name": "yetanothernamegenerator",
+  "name": "@jonathanlurie/yetanothernamegenerator",
   "version": "0.1.0",
   "description": "This is yet another name generator",
   "repository": "jonathanlurie/yetanothernamegenerator",
